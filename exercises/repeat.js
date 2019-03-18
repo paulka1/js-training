@@ -8,6 +8,15 @@
  *
  */
 
+const repeat = (word,number) => {
+  if ( number === 0 ){
+    return ''
+  }else{
+  let fullWord = word ; 
+  for(let i = 1; i < number ; i++){
+     fullWord += word ;
+  }return fullWord
+} }; 
 //* Begin of tests
 const assert = require('assert')
 

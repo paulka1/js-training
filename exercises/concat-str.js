@@ -8,6 +8,11 @@
 
 // Your code :
 
+function concatStr(argm,argm1){
+  let done = argm.concat(argm1) ;
+  return done 
+};
+
 //* Begin of tests
 const assert = require('assert')
 

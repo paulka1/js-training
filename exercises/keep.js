@@ -12,9 +12,27 @@
  *
  */
 
+const keepFirst = (word) => {
+  return word.slice(0,2);
+}
+
+const keepLast = (word) => {
+  return word.slice(word.length - 2, word.length);
+}
+
+const keepFirstLast = (word) => {
+  return word.slice(2,4);
+}
+
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+
+assert.strictEqual(keepFirst('yopoulette'), 'yo')
+assert.strictEqual(keepFirst('yocuit'), 'yo')
+assert.strictEqual(keepLast('pouletteyo'), 'yo')
+assert.strictEqual(keepLast('cuityo'), 'yo')
+assert.strictEqual(keepFirstLast('yopouletteyo'), 'po')
+assert.strictEqual(keepFirstLast('yocuityo'), 'cu')
 // End of tests */

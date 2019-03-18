@@ -10,6 +10,22 @@
 
 // Your code :
 
+function multiply(num1, num2){
+  let result = 0;
+  let i = 0;
+  while (i < Math.abs(num2)){
+      result += Math.abs(num1);
+      i +=1;
+  }
+  if ((num1>0 && num2>0) || (num1<0 && num2<0)) {
+      return result;
+  } else if ((num1<0 || num2<0) && result !=0){
+      return -result
+  } else {
+      return result;
+  }
+}
+
 //* Begin of tests
 const assert = require('assert')
 

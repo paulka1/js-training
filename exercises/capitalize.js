@@ -6,8 +6,17 @@
  * and in lowercase for the rest of the string
  *
  */
-
-
+/*
+*let firstLetter = word.charAt(0) ;
+* firstLetter = firstLetter.toUpperCase();
+* console.log(firstLetter + newWord.slice(1))
+*}
+*/
+const capitalize = (word) => {
+  if (typeof word !== 'string') return ''
+  let newWord = word.toLowerCase() ;
+  return newWord.charAt(0).toUpperCase() + newWord.slice(1)
+}
 //* Begin of tests
 const assert = require('assert')
 

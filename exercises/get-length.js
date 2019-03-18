@@ -9,6 +9,14 @@
 
 // Your code :
 
+function getLength(truc){
+  if(typeof truc === 'string'){
+    return truc.length
+  }else{
+    return truc.length
+  }
+}
+
 //* Begin of tests
 const assert = require('assert')
 

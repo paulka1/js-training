@@ -11,6 +11,15 @@
 
 // Your code :
 
+let multiply = (a, b) => {
+  if (!a || !b) { return 0; }
+  if (b-1 < 0) {
+      return -a + multiply(a, ++b);
+  }
+  if (b > 0) {
+      return a + multiply(a, --b);
+  }
+}
 //* Begin of tests
 const assert = require('assert')
 

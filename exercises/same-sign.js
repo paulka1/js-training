@@ -9,6 +9,26 @@
 
 // Your code :
 
+const sameSign = (number,number1) => {
+  
+  if( (number === 0 && number1 != 0) || (number != 0 && number1 === 0) ){
+    return false
+
+  }else if (number > 0 && number1 > 0){
+    return true
+
+  }else if(number < 0 && number1 < 0){
+    return true
+
+  }else if(number === number1 ){
+    return true
+  }else{
+    return false
+  }
+
+  }
+
+
 //* Begin of tests
 const assert = require('assert')
 

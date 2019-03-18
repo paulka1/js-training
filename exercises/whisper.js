@@ -6,10 +6,11 @@
  * and wrapped by `*`
  *
  */
+const whisper = string => '/*' + string + '*/'
 
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(whisper('papa'),'/*papa*/')
 // End of tests */
